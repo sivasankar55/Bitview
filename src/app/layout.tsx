@@ -6,6 +6,7 @@ import ConvexClerkProvider from "@/components/ui/providers/ConvexClerkProvider";
 
 import { ThemeProvider } from "@/components/ui/providers/ThemeProvider";
 import Navbar from "@/components/Navbar";
+import { Toaster } from "react-hot-toast";
 
 
 const geistSans = localFont({
@@ -51,6 +52,7 @@ export default function RootLayout({
           <RedirectToSignIn/>
         </SignedOut>
         </ThemeProvider>
+        <Toaster/>
       </body>
     </html>
     </ConvexClerkProvider>
