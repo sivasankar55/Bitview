@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 
 function MeetingSetup({ onSetupComplete }: { onSetupComplete: () => void }) {
   const [isCameraDisabled, setIsCameraDisabled] = useState(true);
-  const [isMicDisabled, setIsMicDisabled] = useState(false);
+  const [isMicDisabled, setIsMicDisabled] = useState(true);
 
   const call = useCall();
 
