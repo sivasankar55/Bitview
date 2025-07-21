@@ -1,5 +1,5 @@
 import { CallControls, CallingState, CallParticipantsList, PaginatedGridLayout, SpeakerLayout, useCallStateHooks } from "@stream-io/video-react-sdk";
-import { LoaderIcon,LayoutListIcon,UsersIcon  } from "lucide-react";
+import { LoaderIcon,LayoutListIcon,UsersIcon, Code  } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ResizableHandle, ResizablePanel, ResizablePanelGroup } from "./ui/resizable";
@@ -11,7 +11,7 @@ import {
 } from "./ui/dropdown-menu";
 import { Button } from "./ui/button";
 import EndCallButton from "./EndCallButton";
-// import CodeEditor from "./CodeEditor";
+import CodeEditor from "./CodeEditor";
 
 function MeetingRoom() {
   const router = useRouter();
@@ -89,7 +89,7 @@ function MeetingRoom() {
     <ResizableHandle withHandle/>
 
     <ResizablePanel defaultSize={65} minSize={25}>
-      <h1>code editor will go here</h1>
+     <CodeEditor/>
       </ResizablePanel>
   </ResizablePanelGroup>
   </div>
